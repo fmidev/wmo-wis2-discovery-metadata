@@ -1,0 +1,127 @@
+{
+    "id":"urn:wmo:md:fi-fmi:radar_cappi_composite_dbzh",
+    "conformsTo":[
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "type":"Feature",
+    "geometry":{
+        "type":"Polygon",
+        "coordinates":[
+            [
+                [
+                    17.0,
+                    56.7513
+                ],
+                [
+                    17.0,
+                    71.2681
+                ],
+                [
+                    32.70,
+                    71.2681
+                ],
+                [
+                    32.70,
+                    56.7513
+                ],
+                [
+                    17.0,
+                    56.7513
+                ]
+            ]
+        ]
+    },
+    "properties":{
+        "title":"Finland Radar Composite",
+        "description":"Reflectivity constant altitude image (CAPPI, Constant Altitude Plan Position Indicator). The image combines measurements from several radars. The product contains radar reflectivity (dBZ) measurements that estimate precipitation intensity.",
+        "themes":[
+            {
+                "concepts":[
+                    {
+                        "id":"weather"
+                    }
+                ],
+                "scheme":"https://codes.wmo.int/wis/topic-hierarchy/earth-system-discipline"
+            }
+        ],
+        "language":"en",
+        "type":"dataset",
+        "created":"2025-06-11T00:00:00Z",
+        "rights":"CC BY 4.0",
+        "formats":[
+            "WMS"
+        ],
+        "contacts":[
+            {
+                "addresses":[
+                    {
+                        "deliveryPoint":[
+                            "Erik Palmenin aukio 1"
+                        ],
+                        "city":"Helsinki",
+                        "administrativeArea":"Helsinki",
+                        "postalCode":"00560",
+                        "country":"Finland"
+                    }
+                ],
+                "roles":[
+                    "host"
+                ],
+                "organization":"innish Meteorological Institute",
+                "name":"Open Data Helpdesk",
+                "contactInstructions":"email",
+                "phones": [
+                    {
+                        "value": "+358295391000"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "avoin-data@fmi.fi"
+                    }
+                ],
+                "links":[
+                    {
+                        "rel":"canonical",
+                        "type":"text/html",
+                        "href":"https://ilmatieteenlaitos.fi/en/opendata"
+                    }
+                ]
+            }
+        ],
+        "keywords":[
+            "Atmospheric conditions",
+            "Meteorology",
+            "Weather",
+            "Weather and Climate",
+            "Finland",
+            "Atmosphere",
+            "Radar",
+            "real-time"
+          
+        ],
+        "wmo:dataPolicy":"core"
+    },
+    "links":[
+        {
+            "href":"https://openwms.fmi.fi/geoserver/Radar/suomi_dbz_eureffin/wms?service=WMS&request=GetCapabilities&layers=suomi_dbz_eureffin",
+            "type":"application/xml",
+            "rel":"data",
+            "title":"Radar dbz"
+        },
+        {
+            "rel":"license",
+            "href":"https://creativecommons.org/licenses/by/4.0/",
+            "type":"text/html",
+            "title":"Creative Commons Attribution 4.0 International (CC BY 4.0)"
+        }
+
+    ],
+    "time":{
+        "interval":[
+            "2018-03-08",
+            ".."
+        ],
+        "resolution": "PT5M"
+    }
+}
